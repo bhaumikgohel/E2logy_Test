@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="Add To Cart Items">  
+  <test name="Check Add To Cart Items">  
+	
+    <classes>  
+      <class name="e2logy.TestCases.HomePageTest"></class>
+       <class name="e2logy.TestCases.LoginTest"></class>
+        <class name="e2logy.TestCases.AccountPageTest"></class>
+         <class name="e2logy.TestCases.SalePageTest"></class>
+           <class name="e2logy.TestCases.ProductDetailPageTest"></class>
+    </classes> 
+  </test>       
+</suite>  
