@@ -1,5 +1,7 @@
 package e2logy.TestCases;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -34,8 +36,37 @@ public class HomePageTest extends TestBase{
 	}
 	
 	@Test(priority=2)
+	public void Verify_HomepageLogo() {
+		
+		boolean hlogo = homepageobj.verify_logo();
+		
+		Assert.assertTrue(hlogo);
+	}
+	
+	@Test(priority=3)
+	public void Verify_HomepageHeader() {
+		
+		boolean header = homepageobj.verify_header();
+		
+		Assert.assertTrue(header);
+	}
+	
+	@Test(priority=4)
+	public void Verify_HomepageFooter() {
+		
+		boolean footer = homepageobj.verify_footer();
+		
+		Assert.assertTrue(footer);
+	}
+	
+	@Test(priority=5)
 	public void Verify_user_icon() {
 		loginpageobj = homepageobj.Validate_User_icon();
+	}
+	
+	@Test(priority=6)
+	public void Verify_SearchFunctionality() throws InterruptedException {
+		homepageobj.SearchPageDataUsingDataDriven();
 	}
 	
 	@AfterMethod
