@@ -1,7 +1,7 @@
 package e2logy.TestCases;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -9,7 +9,6 @@ import e2logy.Base.TestBase;
 import e2logy.Pages.AccountPage;
 import e2logy.Pages.HomePage;
 import e2logy.Pages.LoginPage;
-import e2logy.Pages.SalePage;
 
 public class LoginTest extends TestBase{
 	
@@ -48,7 +47,7 @@ public class LoginTest extends TestBase{
 	}
 
 	
-	@AfterTest
+	@AfterMethod
 	public void Terminate() {
 		driver.quit();
 	}

@@ -55,4 +55,9 @@ public class ProductDetailPageTest extends TestBase{
 		checkoutobj = productdetailobj.click_on_add_tobag_button();
 	}
 	
+	@AfterMethod
+	public void Terminate() {
+		driver.quit();
+	}
+	
 }
