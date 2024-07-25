@@ -29,7 +29,7 @@ public class SalePage extends TestBase{
 		return driver.getTitle();
 	}
 	
-	public ProductDetailPage Validate_Addtobag_Items() {
+	public ProductDetailPage Click_on_Product() {
 		
 		Util.ScrolluptoElement(cargoproduct);
 		

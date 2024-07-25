@@ -1,11 +1,13 @@
 package e2logy.TestCases;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import e2logy.Base.TestBase;
 import e2logy.Pages.AccountPage;
+import e2logy.Pages.CheckOutPage;
 import e2logy.Pages.HomePage;
 import e2logy.Pages.LoginPage;
 import e2logy.Pages.ProductDetailPage;
@@ -18,6 +20,7 @@ public class ProductDetailPageTest extends TestBase{
 	AccountPage accountpageobj;
 	SalePage saleobj;
 	ProductDetailPage productdetailobj;
+	CheckOutPage checkoutobj;
 	
 	public ProductDetailPageTest(){
 		super();
@@ -30,6 +33,7 @@ public class ProductDetailPageTest extends TestBase{
 		loginobj = homepageobj.Validate_User_icon();
 		accountpageobj = loginobj.Validate_loginfunctionality();
 		saleobj = accountpageobj.Verify_SalePage_Link();
+		productdetailobj=saleobj.Click_on_Product();
 	}
 	
 	@Test(priority=1)
@@ -40,8 +44,15 @@ public class ProductDetailPageTest extends TestBase{
 	}
 	
 	@Test(priority=2)
-	public void Click_on_Sale_Link() {
-		productdetailobj.click_on_add_tobag_button();
+	public void Verify_Cart_Functionality() {
+		boolean isbagempty = productdetailobj.Verify_cart_Functionality();
+		
+		Assert.assertTrue(isbagempty);
 	}
-
+	
+	@Test(priority=3)
+	public void Click_on_Addtobag_Button() throws InterruptedException {
+		checkoutobj = productdetailobj.click_on_add_tobag_button();
+	}
+	
 }

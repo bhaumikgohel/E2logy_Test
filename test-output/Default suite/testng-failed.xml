@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="e2logy.TestCases.SalePageTest">
+      <class name="e2logy.TestCases.CheckOutTest">
         <methods>
           <include name="setup"/>
-          <include name="terminate"/>
-          <include name="Click_on_Sale_Link"/>
+          <include name="VerifyCheckOutFunctionalitywithNagativeValueTest"/>
         </methods>
-      </class> <!-- e2logy.TestCases.SalePageTest -->
+      </class> <!-- e2logy.TestCases.CheckOutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

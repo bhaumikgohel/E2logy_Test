@@ -1,25 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-22T19:39:51 IST" name="Default suite" finished-at="2024-07-22T19:40:40 IST" duration-ms="49449">
+  <suite started-at="2024-07-25T14:13:29 IST" name="Default suite" finished-at="2024-07-25T14:16:04 IST" duration-ms="154496">
     <groups>
     </groups>
-    <test started-at="2024-07-22T19:39:51 IST" name="Default test" finished-at="2024-07-22T19:40:40 IST" duration-ms="49449">
-      <class name="e2logy.TestCases.SalePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:e2logy.TestCases.SalePageTest@1da2cb77]" started-at="2024-07-22T19:39:51 IST" name="setup" finished-at="2024-07-22T19:40:33 IST" duration-ms="41883" status="PASS">
+    <test started-at="2024-07-25T14:13:29 IST" name="Default test" finished-at="2024-07-25T14:16:04 IST" duration-ms="154496">
+      <class name="e2logy.TestCases.CheckOutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:e2logy.TestCases.CheckOutTest@7c24b813]" started-at="2024-07-25T14:13:29 IST" name="setup" finished-at="2024-07-25T14:14:12 IST" duration-ms="42858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Click_on_Sale_Link()[pri:2, instance:e2logy.TestCases.SalePageTest@1da2cb77]" started-at="2024-07-22T19:40:33 IST" name="Click_on_Sale_Link" finished-at="2024-07-22T19:40:39 IST" duration-ms="6038" status="PASS">
+        <test-method signature="VerifyCheckOutFunctionalitywithNagativeValueTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:e2logy.TestCases.CheckOutTest@7c24b813]" started-at="2024-07-25T14:14:12 IST" name="VerifyCheckOutFunctionalitywithNagativeValueTest" data-provider="getCheckOutData" finished-at="2024-07-25T14:14:22 IST" duration-ms="10129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bhaumik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bhaumik]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gohel]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Gota VasantNagar]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ahmedabad]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Click_on_Sale_Link -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:e2logy.TestCases.SalePageTest@1da2cb77]" started-at="2024-07-22T19:40:39 IST" name="terminate" finished-at="2024-07-22T19:40:40 IST" duration-ms="1441" status="PASS">
+        </test-method> <!-- VerifyCheckOutFunctionalitywithNagativeValueTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:e2logy.TestCases.CheckOutTest@7c24b813]" started-at="2024-07-25T14:14:22 IST" name="setup" finished-at="2024-07-25T14:15:03 IST" duration-ms="40450" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- terminate -->
-      </class> <!-- e2logy.TestCases.SalePageTest -->
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyCheckOutFunctionalitywithNagativeValueTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:e2logy.TestCases.CheckOutTest@7c24b813]" started-at="2024-07-25T14:15:03 IST" name="VerifyCheckOutFunctionalitywithNagativeValueTest" data-provider="getCheckOutData" finished-at="2024-07-25T14:15:13 IST" duration-ms="10335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kartik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kartik]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Arya]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Aryan Appartment]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Bhavnagar]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCheckOutFunctionalitywithNagativeValueTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:e2logy.TestCases.CheckOutTest@7c24b813]" started-at="2024-07-25T14:15:13 IST" name="setup" finished-at="2024-07-25T14:15:54 IST" duration-ms="40411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyCheckOutFunctionalitywithNagativeValueTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:e2logy.TestCases.CheckOutTest@7c24b813]" started-at="2024-07-25T14:15:54 IST" name="VerifyCheckOutFunctionalitywithNagativeValueTest" data-provider="getCheckOutData" finished-at="2024-07-25T14:16:04 IST" duration-ms="10019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nikunj]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nikunj]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Trivedi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Trivedi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Rajkot]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCheckOutFunctionalitywithNagativeValueTest -->
+      </class> <!-- e2logy.TestCases.CheckOutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

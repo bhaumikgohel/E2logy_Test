@@ -43,7 +43,7 @@ public class SalePageTest extends TestBase{
 	
 	@Test(priority=2)
 	public void Click_on_Sale_Link() {
-		productdetailobj = saleobj.Validate_Addtobag_Items();
+		productdetailobj = saleobj.Click_on_Product();
 	}
 	
 	@AfterMethod
