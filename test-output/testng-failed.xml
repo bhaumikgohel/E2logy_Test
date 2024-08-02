@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="e2logy.TestCases.HomePageTest">
+      <class name="ecomm.TestCases.HomePageTest">
         <methods>
-          <include name="Setup"/>
           <include name="Verify_SearchFunctionality"/>
+          <include name="Setup"/>
           <include name="Terminate"/>
         </methods>
-      </class> <!-- e2logy.TestCases.HomePageTest -->
+      </class> <!-- ecomm.TestCases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

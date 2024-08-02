@@ -4,12 +4,12 @@
   <test name="Check Add To Cart Items">  
 	
     <classes>  
-      <class name="e2logy.TestCases.HomePageTest"></class>
-       <class name="e2logy.TestCases.LoginTest"></class>
-        <class name="e2logy.TestCases.AccountPageTest"></class>
-         <class name="e2logy.TestCases.SalePageTest"></class>
-          <class name="e2logy.TestCases.ProductDetailPageTest"></class>
-          <class name="e2logy.TestCases.CheckOutTest"></class>
+      <class name="ecomm.TestCases.HomePageTest"></class>
+       <class name="ecomm.TestCases.LoginTest"></class>
+        <class name="ecomm.TestCases.AccountPageTest"></class>
+         <class name="ecomm.TestCases.SalePageTest"></class>
+          <class name="ecomm.TestCases.ProductDetailPageTest"></class>
+          <class name="ecomm.TestCases.CheckOutTest"></class>
     </classes> 
   </test>       
 </suite>  
