@@ -3,6 +3,7 @@ package ecomm.Base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -49,7 +50,8 @@ public static void initilization() {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(prop.getProperty("url"));
 		
 		

@@ -1,4 +1,5 @@
 package ecomm.utils;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -17,7 +18,8 @@ public class MyListeners implements ITestListener{
 	
 	 public void onStart(ITestContext context) {
 		 
-		 UI = new ExtentSparkReporter("D:\\Automation\\End2End_Ecomm\\src\\main\\java\\ecomm\\Resource\\Reports");
+		 UI = new ExtentSparkReporter("D:\\Automation\\End2End_Ecomm\\src\\main\\java\\ecomm\\Resource\\Reports\\index.html");
+		 
 		 UI.config().setDocumentTitle("End to End Ecom Testing");
 		 UI.config().setReportName("All Report Data");
 		 UI.config().setTheme(Theme.STANDARD);
