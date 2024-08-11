@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
-<suite name="Check End to End Flow">  
+<suite name="Check End to End Flow" parallel="tests">  
+  
+  <listeners>
+	  <listener class-name="ecomm.utils.MyListeners"></listener>
+  </listeners>
   <test name="Check Add To Cart Items">  
 	
-    <classes>  
+    <classes >  
       <class name="ecomm.TestCases.HomePageTest"></class>
        <class name="ecomm.TestCases.LoginTest"></class>
         <class name="ecomm.TestCases.AccountPageTest"></class>

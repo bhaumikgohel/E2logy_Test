@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>Ecom</groupId>
+  <groupId>End2End_Ecomm</groupId>
   <artifactId>e2logy</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>e2logy</name>
+  <name>End2End_Ecomm</name>
   <url>http://maven.apache.org</url>
 
   <properties>

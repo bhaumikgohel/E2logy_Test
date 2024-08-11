@@ -1,15 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="tests" name="Failed suite [Check End to End Flow]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Check Add To Cart Items(failed)">
     <classes>
       <class name="ecomm.TestCases.HomePageTest">
         <methods>
+          <include name="Verify_HomepageLogo"/>
+          <include name="Verify_HomepageFooter"/>
+          <include name="Verify_HomepageTitle"/>
           <include name="Verify_SearchFunctionality"/>
+          <include name="Verify_HomepageHeader"/>
+          <include name="Verify_user_icon"/>
           <include name="Setup"/>
           <include name="Terminate"/>
         </methods>
       </class> <!-- ecomm.TestCases.HomePageTest -->
+      <class name="ecomm.TestCases.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="Verify_ProductList"/>
+          <include name="Verify_Title"/>
+          <include name="login"/>
+          <include name="Terminate"/>
+        </methods>
+      </class> <!-- ecomm.TestCases.LoginTest -->
+      <class name="ecomm.TestCases.AccountPageTest">
+        <methods>
+          <include name="Click_on_Sale_Link"/>
+          <include name="setup"/>
+          <include name="terminate"/>
+          <include name="Verify_Title"/>
+        </methods>
+      </class> <!-- ecomm.TestCases.AccountPageTest -->
+      <class name="ecomm.TestCases.SalePageTest">
+        <methods>
+          <include name="Click_on_Sale_Link"/>
+          <include name="Verify_Title"/>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- ecomm.TestCases.SalePageTest -->
+      <class name="ecomm.TestCases.ProductDetailPageTest">
+        <methods>
+          <include name="Verify_Title"/>
+          <include name="Click_on_Addtobag_Button"/>
+          <include name="Terminate"/>
+          <include name="Verify_Cart_Functionality"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- ecomm.TestCases.ProductDetailPageTest -->
+      <class name="ecomm.TestCases.CheckOutTest">
+        <methods>
+          <include name="CheckOutRequiredFieldValidationTest"/>
+          <include name="Check_Check_Out_Page_Title_Test"/>
+          <include name="VerifyCheckOutFunctionalitywithNagativeValueTest"/>
+          <include name="terminate"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- ecomm.TestCases.CheckOutTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Check Add To Cart Items(failed) -->
+</suite> <!-- Failed suite [Check End to End Flow] -->

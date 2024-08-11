@@ -1,5 +1,4 @@
 package ecomm.utils;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,7 +12,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -22,7 +20,7 @@ import ecomm.Base.TestBase;
 
 public class Util extends TestBase{
 	
-	public static String TESTDATA_FILE = "D:\\Automation\\e2logy\\src\\main\\java\\ecomm\\Resource\\credentials.xls";
+	public static String TESTDATA_FILE = "D:\\Automation\\End2End_Ecomm\\src\\main\\java\\ecomm\\Resource\\credentials.xls";
 	
 	static Workbook book;
 	static Sheet sheet;

@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -19,7 +20,7 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("D:\\Automation\\e2logy\\src\\main\\java\\ecomm\\Config\\config.properties");
+			FileInputStream ip = new FileInputStream("D:\\Automation\\End2End_Ecomm\\src\\main\\java\\ecomm\\Config\\config.properties");
 			prop.load(ip);
 			}
 			catch(FileNotFoundException e) {
@@ -30,6 +31,7 @@ public class TestBase {
 			}
 	}
 	
+//	@Parameters("browser")
 public static void initilization() {
 		
 		String Browsers = prop.getProperty("browser");
@@ -39,7 +41,8 @@ public static void initilization() {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
-		else if(Browsers.equals("firefox")) {
+		if(Browsers.equals("firefox")) {
+			
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
