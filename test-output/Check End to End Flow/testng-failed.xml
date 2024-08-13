@@ -9,8 +9,6 @@
       <class name="ecomm.TestCases.LoginTest">
         <methods>
           <include name="setup"/>
-          <include name="Verify_ProductList"/>
-          <include name="Verify_Title"/>
           <include name="login"/>
           <include name="Terminate"/>
         </methods>
@@ -25,12 +23,7 @@
       </class> <!-- ecomm.TestCases.AccountPageTest -->
       <class name="ecomm.TestCases.HomePageTest">
         <methods>
-          <include name="Verify_HomepageLogo"/>
           <include name="Verify_HomepageFooter"/>
-          <include name="Verify_HomepageTitle"/>
-          <include name="Verify_SearchFunctionality"/>
-          <include name="Verify_HomepageHeader"/>
-          <include name="Verify_user_icon"/>
           <include name="Setup"/>
           <include name="Terminate"/>
         </methods>
@@ -46,7 +39,6 @@
       </class> <!-- ecomm.TestCases.CheckOutTest -->
       <class name="ecomm.TestCases.SalePageTest">
         <methods>
-          <include name="Click_on_Sale_Link"/>
           <include name="Verify_Title"/>
           <include name="setup"/>
           <include name="terminate"/>

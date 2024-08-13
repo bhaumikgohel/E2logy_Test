@@ -52,7 +52,7 @@ public class LoginPage extends TestBase{
 		public AccountPage Validate_loginfunctionality() throws InterruptedException {
 			
 			 try {
-		            FileInputStream file = new FileInputStream(new File("D:\\Automation\\e2logy\\src\\main\\java\\e2logy\\Resource\\credentials.xls"));
+		            FileInputStream file = new FileInputStream(new File("D:\\Automation\\End2End_Ecomm\\src\\main\\java\\ecomm\\Resource\\credentials.xls"));
 
 		            // Create Workbook instance holding reference to .xlsx file
 		            Workbook workbook = new HSSFWorkbook(file);

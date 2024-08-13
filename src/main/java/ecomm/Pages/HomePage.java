@@ -66,7 +66,7 @@ public class HomePage extends TestBase{
 	
 	public void SearchPageDataUsingDataDriven() throws InterruptedException {
 		
-		String SearchDataFile = "D:\\Automation\\e2logy\\src\\main\\java\\ecomm\\Resource\\searchdata.xls";
+		String SearchDataFile = "D:\\Automation\\End2End_Ecomm\\src\\main\\java\\ecomm\\Resource\\searchdata.xls";
 		
 		List<String> SearchData = Util.readSearchTermsFromExcel(SearchDataFile);
 	     
